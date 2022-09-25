@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="792.0" prefWidth="873.0" style="-fx-background-color: FFD23F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prosjektoppgave.Controller">
+   <children>
+      <GridPane fx:id="TESTONE" gridLinesVisible="true" layoutX="36.0" layoutY="140.0" prefHeight="606.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: black;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="1.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="25.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="1.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle fx:id="blueCircle" fill="#2196d3" radius="28.0" stroke="BLACK" GridPane.columnIndex="8" GridPane.rowIndex="16" />
+            <Circle fx:id="pinkCircle" fill="#ee4266" radius="28.0" stroke="BLACK" GridPane.columnIndex="8" />
+         </children>
+      </GridPane>
+      <Button layoutX="733.0" layoutY="540.0" mnemonicParsing="false" onAction="#moveUp" style="-fx-background-color: #2196F3#2196F3; -fx-border-color: black;" text="UP" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="803.0" layoutY="575.0" mnemonicParsing="false" onAction="#moveRight" style="-fx-background-color: #2196F3#2196F3; -fx-border-color: black;" text="RIGHT">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="653.0" layoutY="575.0" mnemonicParsing="false" onAction="#moveLeft" style="-fx-background-color: #2196F3; -fx-border-color: black;" text="LEFT">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="downButton" layoutX="723.0" layoutY="610.0" mnemonicParsing="false" onAction="#moveDown" style="-fx-background-color: #2196F3#2196F3; -fx-border-color: black;" text="DOWN">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="723.0" layoutY="250.0" mnemonicParsing="false" onAction="#moveDownP2" style="-fx-background-color: #ee4266#ee4266; -fx-border-color: black;" text="DOWN">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="733.0" layoutY="178.0" mnemonicParsing="false" onAction="#moveUpP2" style="-fx-background-color: #ee4266#ee4266; -fx-border-color: black;" text="UP">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="653.0" layoutY="215.0" mnemonicParsing="false" onAction="#moveLeftP2" style="-fx-background-color: #ee4266#ee4266; -fx-border-color: black;" text="LEFT">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="803.0" layoutY="215.0" mnemonicParsing="false" onAction="#moveRightP2" style="-fx-background-color: #ee4266#ee4266 #ee4266#ee4266; -fx-border-color: black;" text="RIGHT">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="713.0" layoutY="215.0" mnemonicParsing="false" onAction="#wallPlacement2" style="-fx-background-color: #D4A66A#D4A66A; -fx-border-color: black;" text="Place Wall">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="713.0" layoutY="575.0" mnemonicParsing="false" onAction="#wallPlacement" style="-fx-background-color: #D4A66A#D4A66A #D4A66A#D4A66A; -fx-border-color: black;" text="Place Wall">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="720.0" layoutY="390.0" mnemonicParsing="false" onAction="#addWall" style="-fx-border-color: black; -fx-background-color: white;" text="Addwall">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Button>
+      <Text layoutX="158.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="225.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="292.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="362.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="431.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="496.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="566.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="91.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="11.290751671590783">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="43.0" layoutY="755.0" mnemonicParsing="false" onAction="#saveGame" style="-fx-border-color: black;" text="Save">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="loadButton" layoutX="108.0" layoutY="755.0" mnemonicParsing="false" onAction="#loadGame" style="-fx-border-color: black;" text="Load">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text layoutX="140.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUORIDOR" wrappingWidth="474.4512692526023">
+         <font>
+            <Font name="Arial Bold" size="72.0" />
+         </font>
+      </Text>
+      <Circle fx:id="pinkCircle1" fill="#ed4267" layoutX="276.0" layoutY="45.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="blueCircle1" fill="#0077b6" layoutX="456.0" layoutY="45.0" radius="29.0" stroke="BLACK" />
+      <TextField fx:id="textOutput" editable="false" layoutX="653.0" layoutY="20.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white;" text="Velkommen til Quoridor">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textOutput2" editable="false" layoutX="653.0" layoutY="61.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;" text="Lykke til!">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="restartButton" layoutX="173.0" layoutY="755.0" mnemonicParsing="false" onAction="#restart" style="-fx-border-color: black;" text="Restart">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

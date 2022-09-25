@@ -1,0 +1,19 @@
+quoridor.txt
+Hvem sin tur det er (1 er spiller 1 sin tur, 2 spiller 2 sin tur): 
+2
+Posisjonen til spiller 1: 
+8
+14
+Posisjonen til spiller 2: 
+8
+2
+Antall vegger: p1
+1
+Antall vegger: p2 
+0
+Antall vegger totalt: 
+3
+Posisjonen til alle veggene : 
+5 3 1 4
+1 1 1 4
+7 7 4 1
